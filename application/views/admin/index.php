@@ -8,7 +8,7 @@
                 ->where('ID_ADMIN', $this->session->userdata('ID_ADMIN'))
                 ->get()->row_array();
             ?>
-            <p class="text-white mt-5 mb-5">Selamat Datang, <b> <?= $user['nama'] ?></b></p>
+            <p class="text-white mt-5 mb-5">Selamat Datang, <b> <?= $user['USERNAME'] ?></b></p>
         </div>
     </div>
     <!-- row -->

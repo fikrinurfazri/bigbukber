@@ -1,5 +1,5 @@
 <!-- Footer Starts Here -->
-<footer>
+<!-- <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-3 footer-item">
@@ -63,15 +63,16 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 
 <div class="sub-footer">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p>Copyright &copy; 2020 Financial Business Co., Ltd.
+                <p>Created &copy; 2023 Official BigBukber
 
-                    - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                    <!-- - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a> -->
+                </p>
             </div>
         </div>
     </div>

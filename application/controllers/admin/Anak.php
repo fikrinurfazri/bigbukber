@@ -25,6 +25,17 @@ class Anak extends CI_Controller
         $this->load->view('admin/anak');
         $this->load->view('pages/admin/footer');
     }
+    public function getadmin()
+    {
+        $data['user'] = $this->dashboard_m->getuser();
+        $data['periode'] = $this->db->get('periode')->result_array();
+        $data['korcam'] = $this->db->get('korcam')->result_array();
+        $data['anak'] = $this->dashboard_m->getanakadmin();
+        $this->load->view('pages/admin/head');
+        $this->load->view('pages/admin/nav', $data);
+        $this->load->view('admin/anak');
+        $this->load->view('pages/admin/footer');
+    }
     public function addanak()
     {
         // $data['user'] = $this->dashboard_m->getuser();

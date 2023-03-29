@@ -25,6 +25,13 @@ class Dashboard_m extends CI_Model
             ->where('ID_ADMIN', $id['ID_ADMIN'])
             ->get()->result_array();
     }
+    public function getanakadmin()
+    {
+        return $this->db->select('*')
+            ->from('data_anak')
+            ->join('periode ', 'periode.id_periode = data_anak.id_periode', 'left')
+            ->get()->result_array();
+    }
     public function getadmin()
     {
         return $this->db->select('*')

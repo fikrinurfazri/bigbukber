@@ -53,16 +53,22 @@
                                     Artikel
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link <?= $this->router->class == 'anak' ? 'active' : ''; ?> " href="<?= base_url() ?>admin/anak/getadmin">
+                                    <i class="fa fa-child"></i>
+                                    Anak
+                                </a>
+                            </li>
                         <?php } else { ?>
 
-
+                            <li class="nav-item">
+                                <a class="nav-link <?= $this->router->class == 'anak' ? 'active' : ''; ?> " href="<?= base_url() ?>admin/anak">
+                                    <i class="fa fa-child"></i>
+                                    Anak
+                                </a>
+                            </li>
                         <?php } ?>
-                        <li class="nav-item">
-                            <a class="nav-link <?= $this->router->class == 'anak' ? 'active' : ''; ?> " href="<?= base_url() ?>admin/anak">
-                                <i class="fa fa-child"></i>
-                                Anak
-                            </a>
-                        </li>
+
 
 
                         <li class="nav-item">
